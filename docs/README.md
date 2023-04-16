@@ -7,3 +7,14 @@ Demo project for Spring Boot using GraphQl
 ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-graphiql.png)
 - To view console playground - open http://localhost:8080/playground
 ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-playground.png)
+
+## GraphQl Documentation
+https://graphql.org/learn/
+
+### Query
+- Used to find data
+  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-query.png)
+
+### Mutations
+- Used to insert, update or delete data
+  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-mutation.png)
