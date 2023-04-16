@@ -2,9 +2,7 @@ package com.udemy.compras;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import org.checkerframework.checker.units.qual.C;
 import org.springframework.stereotype.Component;
 
 @Component
