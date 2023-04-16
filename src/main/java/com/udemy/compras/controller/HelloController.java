@@ -1,4 +1,4 @@
-package com.udemy.compras;
+package com.udemy.compras.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
