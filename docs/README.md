@@ -25,6 +25,10 @@ https://graphql.org/learn/
 ## Alias
   ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-alias.png)
 
+## Mutation with input
+![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-input.png)
+
+
 ## View schema json
 http://localhost:8080/graphql/schema.json
 
