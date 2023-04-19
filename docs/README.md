@@ -29,11 +29,11 @@ https://graphql.org/learn/
   ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-input.png)
 
 ## Query variables
-  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/query-variables.png)
+  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-query-variables.png)
 
 ## POST API Graphql
-  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/query-post-api-1.png)
-  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/query-post-api-2.png)
+  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-post-api-1.png)
+  ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-post-api-2.png)
 
 ## View schema json
 http://localhost:8080/graphql/schema.json
