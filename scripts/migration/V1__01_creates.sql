@@ -1,16 +1,16 @@
-create table cliente (
+create table if not exists cliente (
     id    bigint auto_increment primary key,
     email varchar(255) null,
     nome  varchar(255) null
 );
 
-create table produto(
+create table if not exists produto(
     id    bigint auto_increment primary key,
     nome  varchar(255) null,
     valor double       not null
 );
 
-create table compra
+create table if not exists compra
 (
     id         bigint auto_increment primary key,
     data       datetime     null,

@@ -2,6 +2,7 @@
 Demo project for Spring Boot using GraphQl
 
 ## Start Project
+- Run **docker-compose up** (to start mysql docker container with migrations)
 - Run ComprasApplication
   - To view console graphiql - open http://localhost:8080/graphiql
   ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-graphiql.png)

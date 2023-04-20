@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+    mysqldb:
+        image: mysql:5.7
+        container_name: 'compras-graphql-udemy'
+        ports:
+            - 3306:3306
+        environment:
+            - MYSQL_ROOT_PASSWORD=12345
+            - MYSQL_DATABASE=compras_graphql_udemy
+            - MYSQL_USER=compras-graphql-udemy
+            - MYSQL_PASSWORD=12345
+        volumes:
+            - ./scripts/migration/:/docker-entrypoint-initdb.d/
