@@ -4,7 +4,7 @@ import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.udemy.compras.service.ClienteService;
 import com.udemy.compras.entity.Cliente;
-import com.udemy.compras.entity.ClienteInput;
+import com.udemy.compras.entity.input.ClienteInput;
 import java.util.List;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

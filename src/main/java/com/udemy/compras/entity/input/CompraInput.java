@@ -1,4 +1,4 @@
-package com.udemy.compras.entity;
+package com.udemy.compras.entity.input;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

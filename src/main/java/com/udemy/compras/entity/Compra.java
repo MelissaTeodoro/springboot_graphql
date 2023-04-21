@@ -1,6 +1,7 @@
 package com.udemy.compras.entity;
 
 import java.util.Date;
+import javax.persistence.Cacheable;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -16,6 +17,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Cacheable
 public class Compra {
 
     @Id

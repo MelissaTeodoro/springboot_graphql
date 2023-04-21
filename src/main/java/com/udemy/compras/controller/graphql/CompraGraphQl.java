@@ -6,7 +6,7 @@ import com.udemy.compras.service.ClienteService;
 import com.udemy.compras.service.CompraService;
 import com.udemy.compras.service.ProdutoService;
 import com.udemy.compras.entity.Compra;
-import com.udemy.compras.entity.CompraInput;
+import com.udemy.compras.entity.input.CompraInput;
 import java.util.Date;
 import java.util.List;
 import org.modelmapper.ModelMapper;

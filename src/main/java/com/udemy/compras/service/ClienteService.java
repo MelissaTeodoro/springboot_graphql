@@ -5,6 +5,7 @@ import com.udemy.compras.repository.ClienteRepository;
 import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -17,6 +18,7 @@ public class ClienteService {
         return repository.findById(id).orElse(null);
     }
 
+    @Cacheable("clientes")
     public List<Cliente> findAll() {
         return repository.findAll();
     }
