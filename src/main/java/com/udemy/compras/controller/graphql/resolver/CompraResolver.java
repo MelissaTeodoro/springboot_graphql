@@ -1,8 +1,8 @@
 package com.udemy.compras.controller.graphql.resolver;
 
 import com.coxautodev.graphql.tools.GraphQLResolver;
-import com.udemy.compras.controller.graphql.service.ClienteService;
-import com.udemy.compras.controller.graphql.service.ProdutoService;
+import com.udemy.compras.service.ClienteService;
+import com.udemy.compras.service.ProdutoService;
 import com.udemy.compras.entity.Cliente;
 import com.udemy.compras.entity.Compra;
 import com.udemy.compras.entity.Produto;

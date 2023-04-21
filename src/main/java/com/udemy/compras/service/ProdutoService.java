@@ -1,4 +1,4 @@
-package com.udemy.compras.controller.graphql.service;
+package com.udemy.compras.service;
 
 import com.udemy.compras.entity.Produto;
 import com.udemy.compras.repository.ProdutoRepository;

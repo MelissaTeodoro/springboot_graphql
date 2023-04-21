@@ -2,7 +2,7 @@ package com.udemy.compras.controller.graphql;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import com.udemy.compras.controller.graphql.service.ProdutoService;
+import com.udemy.compras.service.ProdutoService;
 import com.udemy.compras.entity.Produto;
 import com.udemy.compras.entity.ProdutoInput;
 import java.util.List;
