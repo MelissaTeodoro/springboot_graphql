@@ -1,0 +1,37 @@
+package com.udemy.compras.controller.graphql.service;
+
+import com.udemy.compras.entity.Compra;
+import com.udemy.compras.repository.CompraRepository;
+import java.util.List;
+import javax.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CompraService {
+
+    @Autowired
+    private CompraRepository repository;
+
+    public Compra findById(Long id) {
+        return repository.findById(id).orElse(null);
+    }
+
+    public List<Compra> findAll() {
+        return repository.findAll();
+    }
+
+    @Transactional
+    public Compra save(Compra compra) {
+        return repository.save(compra);
+    }
+
+    @Transactional
+    public Boolean deleteById(Long id) {
+        if (repository.findById(id).isPresent()) {
+            repository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
+}
