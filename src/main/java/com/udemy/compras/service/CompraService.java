@@ -2,6 +2,7 @@ package com.udemy.compras.service;
 
 import com.udemy.compras.entity.Cliente;
 import com.udemy.compras.entity.Compra;
+import com.udemy.compras.exceptions.DomainException;
 import com.udemy.compras.repository.CompraRepository;
 import java.util.List;
 import javax.transaction.Transactional;
@@ -25,6 +26,9 @@ public class CompraService {
 
     @Transactional
     public Compra save(Compra compra) {
+        if(compra.getQuantidade() > 100) {
+            throw new DomainException("Não é possível fazer uma compra com mais de 100 itens!");
+        }
         return repository.save(compra);
     }
 
