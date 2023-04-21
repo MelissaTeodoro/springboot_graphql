@@ -15,6 +15,9 @@ Demo project for Spring Boot using GraphQl
 ## GraphQl Documentation
 https://graphql.org/learn/
 
+## View schema json
+http://localhost:8080/graphql/schema.json
+
 ### Query
 - Used to find data
   ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-query.png)
@@ -46,8 +49,8 @@ https://graphql.org/learn/
 ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-post-api-1.png)
 ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-post-api-2.png)
 
-## View schema json
-http://localhost:8080/graphql/schema.json
+## Scalar Types
+- Using to create custom entities
 
 ## Queries and mutations to test
 
