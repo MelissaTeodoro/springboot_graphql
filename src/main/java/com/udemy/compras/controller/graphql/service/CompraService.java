@@ -6,6 +6,7 @@ import com.udemy.compras.repository.CompraRepository;
 import java.util.List;
 import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -18,8 +19,8 @@ public class CompraService {
         return repository.findById(id).orElse(null);
     }
 
-    public List<Compra> findAll() {
-        return repository.findAll();
+    public List<Compra> findAll(final PageRequest pageRequest) {
+        return repository.findAll(pageRequest).getContent();
     }
 
     @Transactional

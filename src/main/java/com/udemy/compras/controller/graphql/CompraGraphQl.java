@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -29,8 +30,10 @@ public class CompraGraphQl implements GraphQLQueryResolver, GraphQLMutationResol
         return compraService.findById(id);
     }
 
-    public List<Compra> compras() {
-        return compraService.findAll();
+    public List<Compra> compras(int page, int size) {
+
+        final PageRequest pageRequest = PageRequest.of(page, size);
+        return compraService.findAll(pageRequest);
     }
 
     public Compra saveCompra(CompraInput input) {

@@ -135,6 +135,21 @@ http://localhost:8080/graphql/schema.json
 }
 ```
 
+- Find All Compras Pageable
+```graphql
+{
+  compras(page:1, size:2) {
+    id, quantidade, status,
+    cliente {
+      id, nome
+    },
+    produto {
+      id, nome, valor
+    }
+  }
+}
+```
+
 - Find Compra By Id
 ```graphql
 {
