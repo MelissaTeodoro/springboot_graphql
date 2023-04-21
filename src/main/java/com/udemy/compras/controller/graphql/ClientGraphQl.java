@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ClientGraphQlResolver implements GraphQLQueryResolver, GraphQLMutationResolver {
+public class ClientGraphQl implements GraphQLQueryResolver, GraphQLMutationResolver {
 
     @Autowired
     private ClienteService clienteService;

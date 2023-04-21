@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CompraGraphQlResolver implements GraphQLQueryResolver, GraphQLMutationResolver {
+public class CompraGraphQl implements GraphQLQueryResolver, GraphQLMutationResolver {
 
     @Autowired
     private CompraService compraService;
