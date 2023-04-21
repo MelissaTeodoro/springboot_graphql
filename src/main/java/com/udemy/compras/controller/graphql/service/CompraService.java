@@ -39,4 +39,8 @@ public class CompraService {
     public List<Compra> findAllByCliente(final Cliente cliente) {
         return repository.findAllByCliente(cliente);
     }
+
+    public List<Compra> findAllByClienteAndQuantidade(final Cliente cliente, final int quantidade) {
+        return repository.findAllByClienteAndQuantidade(cliente, quantidade);
+    }
 }

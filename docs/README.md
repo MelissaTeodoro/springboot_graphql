@@ -105,6 +105,21 @@ http://localhost:8080/graphql/schema.json
 }
 ```
 
+- Find All Clients by qtd Compras
+```graphql
+{
+  clientes {
+    id, nome, email,
+    comprasByQtd(quantidade:2) {
+      id, quantidade,
+      produto {
+        id
+      }
+    }
+  }
+}
+```
+
 - Find All Compras
 ```graphql
 {

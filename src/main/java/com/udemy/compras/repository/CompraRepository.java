@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface CompraRepository extends JpaRepository<Compra, Long> {
 
     List<Compra> findAllByCliente(Cliente cliente);
+
+    List<Compra> findAllByClienteAndQuantidade(Cliente cliente, int quantidade);
 }
