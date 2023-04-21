@@ -1,5 +1,6 @@
 package com.udemy.compras.controller.graphql.service;
 
+import com.udemy.compras.entity.Cliente;
 import com.udemy.compras.entity.Compra;
 import com.udemy.compras.repository.CompraRepository;
 import java.util.List;
@@ -33,5 +34,9 @@ public class CompraService {
             return true;
         }
         return false;
+    }
+
+    public List<Compra> findAllByCliente(final Cliente cliente) {
+        return repository.findAllByCliente(cliente);
     }
 }

@@ -38,6 +38,10 @@ https://graphql.org/learn/
 ## Query variables
 - Variables that can be used to receive via query![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-query-variables.png)
 
+## Resolvers
+- Using to interceptor any property
+- Responsible for processing an solicitation and returning the requested data.
+
 ## POST API Graphql
 ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-post-api-1.png)
 ![Alt text](https://raw.github.com/MelissaTeodoro/springboot_graphql/main/docs/assets/graphql-post-api-2.png)
@@ -76,6 +80,22 @@ http://localhost:8080/graphql/schema.json
   }
 }
 ```
+
+- Find All Clients and Compras
+```graphql
+{
+  clientes {
+    id, nome, email,
+    compras {
+      id, quantidade,
+      produto {
+        nome, valor
+      }
+    }
+  }
+}
+```
+
 - Find Client By Id
 ```graphql
 {

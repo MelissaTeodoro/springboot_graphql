@@ -28,12 +28,14 @@ public class Compra {
     /**
      Um cliente possui várias compras e uma compra sempre está associada a um único cliente
      Eager -> Quando for feito o select na tabela de compras vai buscar o cliente
+            (Ruim para performance, pois carrega todos os objetos da base mesmo sem precisarmos)
+     Lazy -> Carrega os dados quando solicitado
      */
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "produto_id")
     private Produto produto;
 }
